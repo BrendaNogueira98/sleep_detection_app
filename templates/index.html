@@ -1,0 +1,50 @@
+<DOCTYPE html>
+    <html lang="pt-BR">
+    <head>
+    <meta charset=UTF-8>
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    <meta http-equiv="X-UA-compatible" content="ie-edge">
+    <title>Drowsiness</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='index.css')}}">
+    <script src="{{ url_for('static',filename='index.js')}}"></script>
+    </head>
+    <body>
+      <header>
+        <h1>Drowsiness detector </h1>
+      </header>
+      <section>
+        <div id="msg"></div>
+        <div id="foto"></div>
+    
+        <div>
+          <img id="imagem" src="" alt="">
+        </div>
+        <div>
+          Select:
+          <input type="radio" name="drowsi">
+          <label for="drowsiness1">Drowsiness1</label>
+          <input type="radio" name="drowsi">
+          <label for="drowsiness2">Drowsiness2</label>
+          <input type="radio" name="drowsi">
+          <label for="model">Model</label>
+        </div>
+        <div>
+          Select:
+          <input type="radio" name="tipo" id="camera">
+          <label for="camera">Camera  or</label>
+          <input type="radio" name="tipo" id="video">
+          <label for="video"></label>
+          Video - write the name of the video:
+          <input type="text" id="videos">
+          <input id="button" type="button" value="Clique" onclick="verificar()">
+        </div>
+        <div id="res">
+        </div>
+      </section>
+      <footer>
+      <p>&copy;Brenda Nogueira</p>
+    </footer>
+  
+    </body>
+    </html>
+    
